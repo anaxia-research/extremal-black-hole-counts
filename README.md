@@ -70,6 +70,30 @@ python3 src/check_beta.py
 python3 src/tables2.py
 ```
 
+## Part III: Ramond primaries
+
+The Ramond sector of Witten's N = 1 extremal theory at `c = 12k` is `H_k = (-1)^k f_k(g_R)`, with
+`g_R = -24 - 4096 (eta(2tau)/eta(tau))^24` the Hauptmodul at the Ramond cusp. Part III proves an exact winding formula
+`R_k(n) = (-1)^m beta_k [n = m^2] + 1/2 sum_r 4096^r rho_r(n-r) e_r(k-r)` for the number of Ramond primary multiplets,
+with positive coefficients `rho_r` and `e_r`. Consequently every `R_k(n)` is a positive integer, strictly increasing
+in `n` and `k`, divisible by 4096 away from perfect squares, and obeys a Cardy formula with explicit error for `n >= k`.
+
+All files are in `part3/`. Run everything with `sh part3/run_all.sh`; it takes under a minute.
+
+| File | What it does | Log |
+|---|---|---|
+| `src/ramond.py` | exact `H_k`, `E_r`, `rho_r` and the winding formula for `R_k(n)` | |
+| `src/superext.py`, `src/jcoeffs.py` | Hauptmodul of `Gamma_0(4)+`, NS counts, `beta_k`; coefficients of `J` | |
+| `src/taylor_check.py` | Taylor identity for `f_k(-24-u)` (`k <= 15`) | `logs/taylor_check.log` |
+| `src/stest.py` | the S-transformation of the Ramond function, to 40 digits | `logs/stest.log` |
+| `src/lemma_check.py` | key inequalities K1, K2 exactly for `k <= 3000`; tail bounds | `logs/lemma_check.log` |
+| `src/cong.py`, `src/v2check.py` | congruences mod 4096 and 8192; 2-adic data | `logs/cong.log`, `logs/v2check.log` |
+| `src/nscompare.py` | `R_k(1) > N_k(1)` for `k <= 3000` | `logs/nscompare.log` |
+| `src/consts.py`, `src/apriori.py` | a priori bound on the Hauptmodul; certified constants | `logs/consts.log`, `logs/apriori.log` |
+| `src/cardy.py`, `src/envelope.py` | circle method errors, error envelope `E+` and its corner values | `logs/cardy.log`, `logs/envelope.log` |
+| `src/unif.py`, `src/lc.py` | data for the uniform Cardy and log-concavity conjectures | `logs/unif.log`, `logs/lc.log` |
+| `src/tables3.py`, `src/figdata.py` | data for the tables and figures | `logs/tables3.log`, `logs/figdata.log` |
+
 ## Further parts
 
-Part III (Ramond primaries) and Part IV (the Maloney-Witten partition function) will be added here.
+Part IV (the Maloney-Witten partition function) will be added here.
