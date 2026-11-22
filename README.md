@@ -94,6 +94,38 @@ All files are in `part3/`. Run everything with `sh part3/run_all.sh`; it takes u
 | `src/unif.py`, `src/lc.py` | data for the uniform Cardy and log-concavity conjectures | `logs/unif.log`, `logs/lc.log` |
 | `src/tables3.py`, `src/figdata.py` | data for the tables and figures | `logs/tables3.log`, `logs/figdata.log` |
 
+## Part IV: Extremal N = 2 elliptic genera
+
+An extremal elliptic genus of index `m` (central charge `c = 6m`) is a weak Jacobi form of weight 0 whose polar
+coefficients are those of the N = 2 vacuum character and its spectral flows (Gaberdiel-Gukov-Keller-Moore-Ooguri).
+Part IV proves that one exists exactly for `m in {1, 2, 3, 4, 5, 7, 8, 11, 13}`, and is then unique.
+The proof evaluates the Neveu-Schwarz function at the Ramond cusp of the theta group, which gives one necessary
+condition for each residue of `m` mod 4:
+
+* odd `m`: `2 C(2m-1) - rho(2m-1) = 3m - 1`, a lattice-point count in an ellipse, impossible for `m > 3655`;
+* `m = 2 mod 4`: `L(m) = -12m`, false for `m >= 6`;
+* `m = 0 mod 4`: `X(m) = 0`, false for `m >= 16`.
+
+The even cases use exact series to `m = 40000` and an explicit circle method beyond. Exact linear algebra
+(rank certificates mod the prime 33554393) excludes the remaining levels 12, 19, 31, 41 and produces the nine genera.
+
+All files are in `part4/`. Run everything with `sh part4/run_all.sh`.
+
+| File | What it does | Log |
+|---|---|---|
+| `src/jacobi.py` | two-variable series for `phi_{-2,1}`, `phi_{0,1}`, `E4`, `E6` and the flowed vacuum `W_m` | |
+| `src/constraints.py` | the three constraints from theta series in `q^(1/8)`; lattice identity check | `logs/constraints.log` |
+| `src/zero4.py` | the `m = 0 mod 4` constraint derived directly from the vacuum character | `logs/zero4.log` |
+| `src/sseries.py` | exact `s`-series of `G`, `T`, `D`; `L(m) < -12m` and `X(m) < 0` for all `m <= 40000` | `logs/sseries.log` |
+| `src/analytic.py` | certified constants and error/main ratios of the circle method for `N >= 20000` | `logs/analytic.log` |
+| `src/transf.py`, `src/identities.py` | transformation laws, theta identities, cusp values of the Hauptmoduln | `logs/transf.log`, `logs/identities.log` |
+| `src/polarlemma.py` | the NS polar structure, coefficient by coefficient, for `m <= 60` | `logs/polarlemma.log` |
+| `src/cuspcheck.py` | Ramond-cusp evaluations on the actual extremal genera | `logs/cuspcheck.log` |
+| `src/polar.py` | rank certificates mod `p` for `m <= 70` | `logs/polar.log` |
+| `src/exist.py` | exact rational solutions for the nine levels; no solution for 12 and 19 | `logs/exist.log` |
+| `src/tables4.py`, `src/genus_rows.py` | data for the tables and figures; `q^1`, `q^2` rows of the nine genera | `logs/tables4.log`, `logs/genus_rows.log` |
+| `src/integral4.py`, `src/signs.py` | integrality and sign pattern of the nine genera through `q^6` | `logs/integral.log`, `logs/signs.log` |
+
 ## Further parts
 
-Part IV (the Maloney-Witten partition function) will be added here.
+Further parts of the programme will be added here.

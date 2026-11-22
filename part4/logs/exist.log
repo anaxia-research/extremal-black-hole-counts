@@ -1,0 +1,11 @@
+m=1: solution found, j(m)=1, all computed coefficients integral: True; q^0 part {-1: 1, 0: 10, 1: 1}
+m=2: solution found, j(m)=2, all computed coefficients integral: True; q^0 part {-2: 1, 0: 22, 2: 1}
+m=3: solution found, j(m)=3, all computed coefficients integral: True; q^0 part {-3: 1, 0: 34, 3: 1}
+m=4: solution found, j(m)=4, all computed coefficients integral: True; q^0 part {-4: 1, 0: 46, 4: 1}
+m=5: solution found, j(m)=5, all computed coefficients integral: True; q^0 part {-5: 1, 0: 58, 5: 1}
+m=7: solution found, j(m)=8, all computed coefficients integral: True; q^0 part {-7: 1, 0: 82, 7: 1}
+m=8: solution found, j(m)=10, all computed coefficients integral: True; q^0 part {-8: 1, 0: 94, 8: 1}
+m=11: solution found, j(m)=16, all computed coefficients integral: True; q^0 part {-11: 1, 0: 130, 11: 1}
+m=13: solution found, j(m)=21, all computed coefficients integral: True; q^0 part {-13: 1, 0: 154, 13: 1}
+m=12: NO rational solution (rank[A|b] includes the b column), j(m)=19
+m=19: NO rational solution (rank[A|b] includes the b column), j(m)=40
