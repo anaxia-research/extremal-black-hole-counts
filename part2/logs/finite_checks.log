@@ -1,0 +1,21 @@
+kappa(1..8) = [276, 2048, 11202, 49152, 184024, 614400, 1881471, 5373952]
+replication formula vs direct Faber polynomials (m<=24, n<=40): mismatches 0 []
+k*=9, j=1: 135149371 (Witten 135149371);  k*=4: 196883 21296876 ; k*=1: 276 1771
+beta_1..10 = [24, 24, 95, 1, 143, 1, 262, -213, 453, -261]
+beta generating function agrees with direct evaluation for k <= 12
+odd k<=400 with beta<=0: [] ; even 8<=k<=400 with beta>=0: []
+values: 128344 ; non-positive: [] ; not increasing in j: [] ; not increasing in k: [] ; not log-concave: []
+table N_k(1), N_k(2):
+1 276 1771
+2 4095 94484
+3 33605 1809594
+4 196883 21296876
+5 924491 184786375
+6 3724376 1294686207
+7 13404880 7727042113
+8 44146595 40656515438
+9 135149371 193081642542
+10 389274228 841842355775
+11 1064822626 3413074069273
+12 2785562780 12994940294622
+time 53s
