@@ -1,0 +1,15 @@
+corner mu=23/24, r=8^(1/4): E1,E2,E3 = ['0.111731', '0.103656', '0.296162']  total 0.511549
+envelope decreasing in r (r0..r0+20) and in mu (23/24..~11): ok
+n-monotone margin min over r in [r0, r0+20] at mu=23/24: 0.0133499 at r = 21.6808
+at r = r0+20: E_env = 2.48085e-889  D = 0.0133499
+   r = 21.682  E*r^2 = 1.1663e-886  D*r^2 = 6.2758
+   r = 43.364  E*r^2 = 5.7094e-3623  D*r^2 = 6.2766
+   r = 216.82  E*r^2 = 2.45e-91905  D*r^2 = 6.2769
+   r = 2168.2  E*r^2 = 7.5893e-9217181  D*r^2 = 6.2769
+   mu = 1.958  corner margin: 2.08862
+   mu = 2.958  corner margin: 2.1491
+   mu = 10.0  corner margin: 2.19923
+k-monotone: 0.4999 exp(2 pi sqrt(8)) = 2.61193e+7 > (1+E)/(1-E) <= 3.09457
+E_env * exp(mu r^2) at mu=23/24, r=sqrt(8): 1.69957e-6 (must be < 1; decreasing in r and mu)
+   decreasing on r in [sqrt8, sqrt8+20]: ok
+max_{k<=300} Z_k(2i)-bound / e^{4 pi k} = 1.0016465 (<= 1.003; for k>300 the extra terms are < k^3 e^{pi sqrt(2k/3) - 3 pi k})
