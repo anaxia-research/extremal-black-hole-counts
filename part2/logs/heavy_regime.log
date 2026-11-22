@@ -1,0 +1,13 @@
+sanity |g(W4 s)-g(s)|, |theta_T(W4 s)-(-2is)^1/2 theta_T(s)|, |g(V0 s)+H1(2s+1)|, ||theta_T(V0 s)| - ...|: ['3.01e-24', '1.29e-26', '2.07e-25', '1.29e-26']
+Theta(1/8) = 1.414213562, D(e^-pi/4) = 1.186236346, Phi_k(2i)/e^{4 pi k} <= 1.000000017
+max_k T*_k e^{-4 pi k} = 1.4142299  (<= TAU = 1.42)
+|theta_R| <= 0.70975764, |g(V0 s)| <= 32.0, Phi_R factor 1.06571, max_k T_R e^{-4 pi k} = 0.001413
+envelope log-derivatives negative at the corners (and they decrease further in r and mu)
+  corner k>=10, j>=8k   E1=5.044e-55 E2=1.2817e-16 E3=8.2432e-8 E=8.2432e-8
+  corner k>=3, j>=8k    E1=1.0865e-16 E2=0.00076794 E3=0.67284 E=0.6736
+  corner k<=2, j>=20k   E1=4.3527e-9 E2=0.14243 E3=0.036657 E=0.17908
+  j-monotone k>=10    from r=1.68179 (nu >= 8.0 mu): min margin 0.0066759; E at r0+20: 1.09e-5503
+  j-monotone 3<=k<=9  from r=3.0 (nu >= 81.0 mu): min margin 0.0059322; E at r0+20: 9.34e-1804
+  j-monotone k<=2     from r=4.0 (nu >= 256.0 mu): min margin 0.005447; E at r0+20: 7.3e-596
+  k-monotone: N_{k+1}/N_k >= 3613.17 / 5.12751
+HEAVY REGIME OK
