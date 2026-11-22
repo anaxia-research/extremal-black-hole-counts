@@ -1,0 +1,16 @@
+m= 1  integral basis coefficients: True  denominators: [1]
+m= 2  integral basis coefficients: False  denominators: [6]
+m= 3  integral basis coefficients: False  denominators: [16, 24, 48]
+m= 4  integral basis coefficients: False  denominators: [8, 27, 144, 432]
+m= 5  integral basis coefficients: False  denominators: [5184, 6912, 10368, 20736]
+m= 7  integral basis coefficients: False  denominators: [82944, 186624, 331776, 497664, 995328, 1492992, 2985984]
+m= 8  integral basis coefficients: False  denominators: [31104, 34992, 46656, 139968, 165888, 746496, 1119744, 4478976]
+m=11  integral basis coefficients: False  denominators: [60466176, 95551488, 161243136, 214990848, 483729408, 644972544, 764411904, 1146617856, 1719926784, 2579890176, 3439853568, 10319560704, 61917364224]
+m=13  integral basis coefficients: False  denominators: [181398528, 1289945088, 1934917632, 2176782336, 5159780352, 23219011584, 27518828544, 34828517376, 36691771392, 41278242816, 55037657088, 82556485632, 110075314176, 123834728448, 2229025112064, 2972033482752, 8916100448256]
+tau_r=(0.0 + 3.0j)  kappa=(-3.6011928e-34 - 8.0000017j)  Khat=(-2.6674844e-5 - 9.2764917e-35j)
+tau_r=(0.0 + 6.0j)  kappa=(5.5780891e-31 - 8.0j)  Khat=(-1.7371755e-13 - 2.0918385e-42j)
+24 q dlog th2 - (E2+th3^4+th4^4): 2.3259e-19
+24 q dlog th3 - (E2+th2^4-th4^4): 1.2466e-19
+24 q dlog th4 - (E2-th2^4-th3^4): 1.1349e-19
+q dkappa/dq + th3^8/(th2^2 th4^2): 7.9684e-20
+kappa^2 - (Khat - 64): 2.841e-28

@@ -1,0 +1,7 @@
+C_G=3.0314511 G(r0)=1.6301768 C_GT=34.774939 GT_max=8.2289996 C_U=1.876199
+L N0=20000  error/main = 0.270598 {'ray': '8.58e-96', 'ET': '0.271', 'EH': '1.47e-93', 'EX': '0.0', 'Emin': '2.96e-31', 'target': '1.67e-184', 'Dmin_eps': '0.159'}
+   max error/main on log grid N in [2e4, 1e24]: 0.270598
+R2 N0=20000  error/main = 0.0816535 {'ray': '2.29e-94', 'ET': '0.0817', 'EH': '3.28e-93', 'EX': '6.29e-91', 'Emin': '7.09e-29', 'target': '0.0', 'Dmin_eps': '0.159'}
+   max error/main on log grid N in [2e4, 1e24]: 0.0816535
+R1 N0=20000  error/main = 0.263766 {'ray': '6.47e-93', 'ET': '0.264', 'EH': '8.9e-92', 'EX': '0.0', 'Emin': '5.97e-27', 'target': '0.0', 'Dmin_eps': '0.159'}
+   max error/main on log grid N in [2e4, 1e24]: 0.263766
